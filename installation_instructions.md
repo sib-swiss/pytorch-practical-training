@@ -1,6 +1,6 @@
 # Environment setup for the Deep Learning Practical training
 
-> :exclamation: if you encounter any error with the instructions given on this page, please create a [github issue](https://github.com/sib-swiss/deep-learning-practical-training/issues/new) to explain your problem  and we will try to get back to you ASAP.
+> :exclamation: if you encounter any error with the instructions given on this page, please create a [github issue](https://github.com/sib-swiss/pytorch-practical-training/issues/new) to explain your problem  and we will try to get back to you ASAP.
 
 
 We detail in this page how to set up your environment with the different external modules you will need in order to be able to follow the course.
@@ -13,7 +13,7 @@ Nevertheless, we detail here several methods a trust you will choose the one mos
 
 ## method 1 : new conda environment from `.yml`
 
-Download the file <a href="https://downgit.github.io/#/home?url=https://github.com/sib-swiss/intro-machine-learning-training/blob/main/pytorch_course.yml" targte="_blank">pytorch_course.yml</a>.
+Download the file <a href="https://downgit.github.io/#/home?url=https://github.com/sib-swiss/pytorch-practical-training/blob/main/pytorch_course.yml" target="_blank">pytorch_course.yml</a>.
 
 
 If you are on Windows and/or are allergic to command line, you can use the [anaconda navigator](https://docs.anaconda.com/anaconda/navigator/tutorials/manage-environments/#importing-an-environment) (if you don't know how to start the navigator, [here's how](https://docs.anaconda.com/anaconda/navigator/getting-started/#starting-navigator)).
