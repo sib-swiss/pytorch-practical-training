@@ -1,6 +1,6 @@
 # create your dataset
-train_dataset = TensorDataset( torch.Tensor(X_train),
-                               torch.Tensor(y_train)) 
+train_dataset = TensorDataset( train_embedding,
+                               train_Ys) 
 
 
 batch_size = 64
@@ -9,8 +9,8 @@ batch_size = 64
 train_dataloader = DataLoader( train_dataset , shuffle = True , batch_size = batch_size ) 
 
 # create your dataset
-valid_dataset = TensorDataset( torch.Tensor(X_valid),
-                               torch.Tensor(y_valid)) 
+valid_dataset = TensorDataset( valid_embedding,
+                               valid_Ys) 
 
 
 ## creating a dataloader
@@ -20,7 +20,7 @@ class Deep_LR(torch.nn.Module):
     
     def __init__(self , input_dim = 2048 , 
                          hidden_dim=[] ,
-                         dropout_fraction = 0.1):
+                         dropout_fraction = 0.0):
         super().__init__()
         
         self.layers = nn.Sequential(  )
