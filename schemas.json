@@ -1,0 +1,41 @@
+{
+    "@context": "https://schema.org/",
+    "@type": "LearningResource",
+    "@id": "https://github.com/sib-swiss/pytorch-practical-training",
+    "http://purl.org/dc/terms/conformsTo": {
+        "@type": "CreativeWork",
+        "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE"
+    },
+    "description": "Hands-on workshop on using pytorch to develop Deep Learning model for Biology",
+    "keywords": "pytorch, bioinformatics, data science, deep learning, neural network",
+    "name": "Practical dip into deep learning - a PyTorch short crash-course",
+    "about": [
+        {
+            "@type": "DefinedTerm",
+            "@id": "http://purl.obolibrary.org/obo/NCIT_C176258",
+            "inDefinedTermSet": "https://ncithesaurus.nci.nih.gov/",
+            "termCode": "C176258",
+            "name": "Deep Learning"
+        }
+    ],
+    "abstract": "This course aims to give the participants some practical knowledge of deep learning models in life sciences. With the rise of new technologies, the volume of omics data in biology and medicine has grown exponentially recently. A major issue is to mine useful predictive knowledge from these data. Machine learning (ML) is a discipline in which computer algorithms perform automated learning by using data to assist humans in dealing with a large volume of multidimensional data, and deep learning is one of these methods. Deep learning is based on artificial neural networks inspired by the structure and function of the human brain. It has been widely applied in computer vision, natural language processing, computational biology, etc. This course will not make the participant an absolute expert in the complex and dynamic world of Deep-Learning. Still, it will aim to “break the ice” through the implementation of simple yet concrete, deep-learning models using the PyTorch library. Participants will be introduced to the basic building blocks of deep-learning models and the main parameters tuned and monitored to ensure the training of large models.",
+    "audience": "Researchers in Life Sciences who already know about Machine Learning and would like to start practising Deep Learning with PyTorch.",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Wandrille Duchemin",
+            "email": "wandrille.duchemin@unibas.ch"
+        },
+        {
+            "@type": "Organization",
+            "name": "SIB Swiss Institute of Bioinformatics"
+        }
+    ],
+    "identifier": "",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "teaches": [
+            "Create simple deep-learning models",
+            "Train, and evaluate a deep-learning auto-encoder model",
+            "Adapt a pre-existing deep-learning model to a new task using fine-tuning"
+    ]
+}

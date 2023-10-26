@@ -1,0 +1,18 @@
+{
+  "title": "Practical dip into deep learning - a PyTorch short crash-course",
+  "keywords": [
+    "python",
+    "pytorch",
+    "deep learning",
+    "bioinformatics",
+    "course",
+    "training"
+  ],
+  "creators": [
+    {
+      "name": "Wandrille Duchemin",
+      "affiliation": "SIB Swiss Institute of Bioinformatics",
+      "orcid": "0000-0001-8854-7235"
+    }  
+  ]
+}
