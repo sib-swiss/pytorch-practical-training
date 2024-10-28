@@ -13,7 +13,7 @@ Nevertheless, we detail here several methods a trust you will choose the one mos
 
 ## method 1 : new conda environment from `.yml`
 
-Download the file <a href="https://downgit.github.io/#/home?url=https://github.com/sib-swiss/pytorch-practical-training/blob/main/pytorch_course.yml" target="_blank">pytorch_course.yml</a>.
+Download the file <a href="https://downgit.github.io/#/home?url=https://github.com/sib-swiss/pytorch-practical-training/blob/master/pytorch_course.yml" target="_blank">pytorch_course.yml</a>.
 
 
 If you are on Windows and/or are allergic to command line, you can use the [anaconda navigator](https://docs.anaconda.com/anaconda/navigator/tutorials/manage-environments/#importing-an-environment) (if you don't know how to start the navigator, [here's how](https://docs.anaconda.com/anaconda/navigator/getting-started/#starting-navigator)).
