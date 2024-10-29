@@ -16,7 +16,7 @@ CEloss(pred , target )
     
 from sklearn.utils.class_weight import compute_class_weight
 W = torch.Tensor( compute_class_weight(class_weight='balanced' , 
-                     classes = range(10) , 
+                     classes = np.array(list( range(10) )), 
                      y= y_train) )
 
 CEloss = nn.CrossEntropyLoss(weight = W)

@@ -16,7 +16,7 @@ class deepLR_neuralNet(torch.nn.Module):
 
 model = deepLR_neuralNet( input_dim = 2 ).to(device)
 print(model)
-print(pms.summary(model, torch.zeros(1,2), show_input=True))
+print(pms.summary(model, torch.zeros(1,2).to(device), show_input=True))
 model = deepLR_neuralNet( input_dim = 2 , hidden_dim = 3 ).to(device)
 loss_fn = nn.BCELoss()
 optimizer = torch.optim.SGD(model.parameters(), lr=1e-1 , momentum = 0.9) 
@@ -39,7 +39,7 @@ fig,ax = plt.subplots()
 
 xx, yy = np.meshgrid(np.linspace(-0.5,1.5,100),np.linspace(-0.5,1.5,100))
 
-pred = model(torch.FloatTensor(np.c_[xx.ravel(), yy.ravel()])).detach().numpy()
+pred = model(torch.FloatTensor(np.c_[xx.ravel(), yy.ravel()]).to(device)).detach().cpu().numpy()
 Z = pred.reshape(xx.shape)
 
 
@@ -49,11 +49,11 @@ cbar = plt.colorbar(CS, ax=ax)
 ax.scatter(xor_X[:,0],xor_X[:,1],c=xor_y)
 
 #We can have a look at the latent space represented in the hidden layer.
-W_hidden=model.layers[0].weight
-b_hidden=model.layers[0].bias
+W_hidden=model.layers[0].weight.detach().cpu().numpy()
+b_hidden=model.layers[0].bias.detach().cpu().numpy()
 
-linear_representation = xor_X @ W_hidden.detach().numpy().T + \
-                            b_hidden.detach().numpy()
+linear_representation = xor_X @ W_hidden.T + \
+                            b_hidden
 ReLU_representation = [[i[p] if i[p]>0 else 0 for i in linear_representation] for p in range(3)]
 import plotly.express as px
 
