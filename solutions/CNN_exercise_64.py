@@ -65,7 +65,7 @@ model
 x,y = train_dataset_64[0]
 x.shape
 
-print(pms.summary(model, x.reshape(1,1,64,64) , show_input=True))
+print(pms.summary(model, x.reshape(1,1,64,64).to(device) , show_input=True))
 
 for batch, (X,y) in enumerate(train_dataloader_64): 
     print(batch , X.shape, y.shape)
@@ -74,9 +74,9 @@ for batch, (X,y) in enumerate(train_dataloader_64):
 loss = nn.BCELoss()
 
 with torch.no_grad():
-    pred = model(X)
+    pred = model(X.to(device))
     print(pred.shape)
-    print( 'avg loss:', loss( pred , y ) )
+    print( 'avg loss:', loss( pred , y.to(device) ) )
 ## preamble -> define the loss function, and the optimizer
 model = CNN(input_size = 64,
             channel_numbers=1 , 
