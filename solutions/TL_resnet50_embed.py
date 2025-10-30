@@ -1,5 +1,5 @@
 ## identity 
-RN50_model.fc = nn.Identity()
+RN50_model.fc = nn.Identity().to(device)
 
 with torch.no_grad():
     X,y = next(iter(train_dataloader))
