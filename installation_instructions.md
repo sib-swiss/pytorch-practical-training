@@ -5,13 +5,33 @@
 
 We detail in this page how to set up your environment with the different external modules you will need in order to be able to follow the course.
 
-We recommend you create a new conda environment specifically for the course (if you are unfamiliar with conda environment see [this documentation](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)). 
+We recommend you create use a [pixi project](https://pixi.sh) or a new [conda environment]((https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)) specifically for the course. 
 
-Nevertheless, we detail here several methods a trust you will choose the one most appropriate to your situations.
+Nevertheless, we detail here several methods and trust you will choose the one most appropriate to your situations.
 
 **important**: the course materials were developped and tested with **python 3.11.5**. Any anterior version may give errors and warnings aplenty!
 
-## method 1 : new conda environment from `.yml`
+
+We recommend that **before the course** you start the first notebook ([01_my_first_pytorch_neural_network.ipynb](https://github.com/sib-swiss/pytorch-practical-training/blob/refs/heads/master/01_my_first_pytorch_neural_network.ipynb)) and run the first cell in order to check that everything installed properly.
+
+
+## method 1 : use `pixi` to install and run the notebooks
+
+[Pixi](https://pixi.sh/latest/) is a fast and reproducible way to distribute packages (python or otherwise). It is quite easy and fast to use but it can only be done with the command line. 
+
+If you are not up to use the command line, we recommend that you look at the other methods below instead (eg, with anaconda navigator).
+
+In order to use it for this course:
+
+ * [install pixi](https://pixi.sh/latest/installation) if that is not already the case.
+ * clone the course repository or download its <a href="https://downgit.github.io/#/home?url=https://github.com/sib-swiss/pytorch-practical-training/blob/master/pyproject.toml" target="_blank">pyproject.toml</a> file. (the pyproject.toml file is what we use to list all the python dependencies to pixi)
+ * on a terminal, navigate to where the file is and use the command: `pixi run jupyter notebook`
+    This command should take a few minutes to scan and install the project python libraries and then launch a jupyter notebook server on your web browser. 
+
+
+> The `pyproject.toml` given here has been configured for a version of pytorch using CPU. For the examples showed in this course that should be enough, but if you have the resources you may want to install the **GPU compatible version**. For this you will have to properly install [CUDA libraries](https://developer.nvidia.com/cuda-downloads) and then configure pixi for GPU-pytorch following this [guide](https://pixi.sh/latest/python/pytorch/) (adding the system-requirements to the `pyproject.toml` should be enough).
+
+## method 2 : new conda environment from `.yml`
 
 Download the file <a href="https://downgit.github.io/#/home?url=https://github.com/sib-swiss/pytorch-practical-training/blob/master/pytorch_course.yml" target="_blank">pytorch_course.yml</a>.
 
