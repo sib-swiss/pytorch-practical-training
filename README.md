@@ -1,4 +1,7 @@
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17799102.svg)](https://doi.org/10.5281/zenodo.17799102)
+
+
 # Practical dip into deep learning - a PyTorch short crash-course
 
 This repository regroups works on the "Practical dip into deep learning - a PyTorch short crash-course" course of the SIB.
@@ -30,11 +33,12 @@ The course does not require any particular expertise with jupyter notebooks to b
  * [03 single_cell_autoencoder](03_single_cell_autoencoder.ipynb): An autoencoder with a custom loss function
  * [04 chest_Xray_CNN](04_chest_Xray_CNN.ipynb): Convolutional Neural Network for image classification
  * [05 chest_Xray_Transfer_Learning](05_chest_Xray_Transfer_Learning.ipynb): Leveraging pre-existing models 
+ * [GRU](GRU.ipynb): a small demonstration of Gated Recurrent Units
+ * [ladybug_GRU](ladybug_GRU.ipynb): exercise notebook on Gated Recurrent Units
 
 Solutions to each practical can be found in the [`solutions/`](solutions/) folder and should be loadable directly in the jupyter notebook themselves.
 
 Note also the `pytorchtools.py` file which contain some early stopping utilities.
-
 
 
 ## directory structure
@@ -45,3 +49,8 @@ Note also the `pytorchtools.py` file which contain some early stopping utilities
 * drafts : some drafts notebooks, with many failed attempts...
 * solutions: exercise solutions
 
+## citation 
+
+If you (re-)use this material, please cite as:
+
+Duchemin, W., Tran, V. D., & Mueller, M. (2025, December 3). Diving into deep learning - theory and applications with PyTorch. Zenodo. [https://doi.org/10.5281/zenodo.17799102](https://doi.org/10.5281/zenodo.17799102)
