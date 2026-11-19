@@ -60,16 +60,14 @@ conda activate pytorch_course
 
 These commands install all necessary modules and their dependencies:
 ```
-conda install pytorch torchvision torchaudio cpuonly -c pytorch
-conda install plotly
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
 pip install pytorch-model-summary
-conda install matplotlib
-conda install pandas
-conda install -c anaconda pytables 
-conda install seaborn
+conda install plotly
+conda install -c conda-forge matplotlib
+conda install -c conda-forge pandas seaborn pytables
 pip install psutil
 pip install "ray[data,train,tune,serve]"
-conda install -c conda-forge shap
+conda install -c conda-forge shap umap-learn
 ```
 
 > conda install command will prompt you for confirmation before installing once they have retrieved the dependencies.
@@ -90,3 +88,6 @@ Python : we recommend at least 3.11.5
  * psutil
  * ray tune
  * shap
+ * umap
+
+
